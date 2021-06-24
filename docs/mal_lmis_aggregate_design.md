@@ -28,7 +28,7 @@ It is recommended that the dataset is assigned to Organisation Units **at the lo
 
 After selecting the required Organization Unit and selecting the "Facility Stock Report" Data Set a separate table for reporting logistics data will be displayed.
 
-![Malaria Dataentry](resources/images/MAL_Dataentry_01.png)
+![Malaria Data entry](resources/images/MAL_Dataentry_01.png)
 
 The list of items will be the same throughout the different tabs.
 

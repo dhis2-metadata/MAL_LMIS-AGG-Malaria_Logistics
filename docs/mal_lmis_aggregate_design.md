@@ -28,7 +28,7 @@ It is recommended that the dataset is assigned to Organisation Units **at the lo
 
 After selecting the required Organization Unit and selecting the "Facility Stock Report" Data Set a separate table for reporting logistics data will be displayed.
 
-![**MAL_Dataentry_01**](resources/images/MAL_Dataentry_01.png)
+![Malaria Dataentry](resources/images/MAL_Dataentry_01.png)
 
 The list of items will be the same throughout the different tabs.
 
@@ -85,7 +85,7 @@ Some of the HMIS data points and indicators can be compared against LMIS data po
 
 The dashboard has a first dialog window with some key definitions to facilitate the reading and interpretation of the data.
 
-![**MAL_Dashboard01_02**](resources/images/MAL_Dashboard01_02.png)
+![Malaria Dashboard 01](resources/images/MAL_Dashboard01_02.png)
 
 The structure is consistent throughout the dashboard:
 
@@ -99,7 +99,7 @@ The structure is consistent throughout the dashboard:
 
 - A graph with the proportion of facilities reporting stock-out days
 
-![MAL_Dashboard02_03](resources/images/MAL_Dashboard02_03.png)
+![Malaria Dashboard 02](resources/images/MAL_Dashboard02_03.png)
 
 Extra items will be available depending on the possibility to triangulate HMIS vs LMIS data.
 

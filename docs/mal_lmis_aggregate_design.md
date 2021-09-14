@@ -1,6 +1,6 @@
-## Malaria logistics
+# Malaria logistics
 
-### Malaria logistics design
+## Malaria logistics design
 
 The logistics metadata is designed to be harmonized conceptually across different health programmes. To ease the adoption of these packages in countries, we have included the program-specific metadata into existing DHIS2 metadata for Malaria programmes. The aggregate HMIS package for malaria therefore includes:
 
@@ -9,13 +9,13 @@ The logistics metadata is designed to be harmonized conceptually across differen
 
 3. Data sets and data elements for facility reporting of logistics data, pre-configured for a set of typical stock items monitored for malaria programmes
 
-#### Intended users
+### Intended users
 
 - **Health facility users**: capture and report key logistics data for specific health programs. The Facility Stock Report is generally used by pharmacists and storekeepers for recording all essential stock data at the health care facility at the end of every month. Storekeepers maintain their usual paper documentation such as stock cards and bin cards for recording stock receipts and stock issues. At the end of every month, data from these records is entered into DHIS2 for sharing data.
 
 - **National and sub-national (e.g. district level) programme managers**: for monitoring overall health programme performance, analyzing and cross-referencing logistics and health service delivery data to make informed decisions about programmatic interventions
 
-#### Data Sets
+### Data Sets
 
 Different stock data sets have been configured for each vertical health programme. The decision to create a new dataset instead of including on the HMIS data entry form was taken because:
 
@@ -24,7 +24,7 @@ Different stock data sets have been configured for each vertical health programm
 
 It is recommended that the dataset is assigned to Organisation Units **at the lowest level** of the health system feasible for reporting data, such as health facilities or community health workers.
 
-#### Data Entry Form (facility stock reporting)
+### Data Entry Form (facility stock reporting)
 
 After selecting the required Organization Unit and selecting the "Facility Stock Report" Data Set a separate table for reporting logistics data will be displayed.
 
@@ -42,7 +42,7 @@ DHIS2 will calculate the "Closing balance" instantly as values are entered in th
 
 Finally, the storekeeper will review the stock records and count the number of days during the reporting period on which the respective health product was out of stock at any time or for any period of the day.
 
-#### Malaria logistics analytics
+### Malaria logistics analytics
 
 The malaria logistics configuration supports core/cross-cutting logistics indicators described in the common metadata framework and logistics performance monitoring indicators. From the data captured, we can also calculate the following indicators which are recommended by the WHO Global Malaria Programme for integrated analysis alongside indicators contained in the WHO HMIS health programmes packages.
 
@@ -72,7 +72,7 @@ The malaria logistics configuration supports core/cross-cutting logistics indica
 | Health facilities with RDT stock-out days (%)                       | facilities with stock-out days reported                                 | Facilities with stock-out days reported + facilities without stock-out days reported |
 | Sulfadoxine-pyrimethamine stock discrepancy (%)                     | stock on hand-(received+opening balance-discarded-issued-redistributed) | stock on hand                                                                        |
 
-#### HMIS-LMIS data triangulation
+### HMIS-LMIS data triangulation
 
 Some of the HMIS data points and indicators can be compared against LMIS data points and indicators. This allows a data analytics user to identify discrepancies between health services delivered and expected stock issued, such as to flag potential data quality errors. This also enables users to do ad hoc analysis such as to monitor the trend of malaria cases tested and RDTs issued against data points like % of cases receiving a diagnostic test, to identify programmatic issues that may be attributed to stock management.
 
@@ -81,7 +81,7 @@ Some of the HMIS data points and indicators can be compared against LMIS data po
 | MAL - Malaria cases tested with RDT    | MAL - RDTs issued |
 | MAL - COnfirmed cases treated with ACT | MAL - ACT issued  |
 
-#### Stock Dashboard
+### Stock Dashboard
 
 The dashboard has a first dialog window with some key definitions to facilitate the reading and interpretation of the data.
 
@@ -103,7 +103,7 @@ The structure is consistent throughout the dashboard:
 
 Extra items will be available depending on the possibility to triangulate HMIS vs LMIS data.
 
-#### Validation
+### Validation
 
 The following data validation rules have been configured to support high quality collection of stock data:
 
@@ -140,7 +140,7 @@ The following data validation rules have been configured to support high quality
 | MAL - LLIN discarded<=LLIN opening   balance + LLIN received                                                                      | LLIN discarded should be less than or   equal to LLIN opening balance + LLIN received                                                                      | less_than_or_equal_to | LLIN discarded                          | LLIN opening balance + LLIN received                                             |
 | MAL - LLIN distributed<=LLIN opening   balance + LLIN received                                                                    | LLIN distributed should be less than or   equal to LLIN opening balance + LLIN received                                                                    | less_than_or_equal_to | LLIN distributed                        | LLIN opening balance + LLIN received                                             |
 
-#### User Groups
+### User Groups
 
 In addition to the regular Admin and access user profiles, the LMIS dataset brings an extra user group.
 
@@ -148,6 +148,6 @@ Stock data capture: designed to enable access to the facility level reporter tha
 
 Please refer to the installation guidance for more information on the other user groups.
 
-#### Customizing Data Entry Forms
+### Customizing Data Entry Forms
 
 The dataset in this package does not contain a custom form. However, many countries may require a custom form interface to more closely match paper records and forms used in countries; and to facilitate a more intuitive user interace for the data entry user. To improve the usability of the form for data entry, implementers may design a custom form to meet their needs by following the DHIS2 User manual: [Manage Custom Forms](#manage_customform)
